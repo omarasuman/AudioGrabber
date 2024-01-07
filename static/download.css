@@ -1,0 +1,189 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Fredericka the Great', serif;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(45deg, #ffa552, #b0410c, #99392a, #a1bec6);
+	background-size: 300% 300%;
+	background-position: center;
+	animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+
+/* Adds css to contents in the header....*/
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 13%;
+	background: transparent;
+	transition: all ease .50s;
+	z-index: 1000;
+}
+
+.logo{
+	font-size: 32px;
+	font-weight: 600;
+	color: #000;
+}
+
+.navlist{
+	display: flex;
+}
+
+.navlist a{
+	margin: 0 30px;
+	padding: 2px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	border-bottom: 2px solid transparent;
+	transition: all ease .50s;
+}
+
+.navlist a:hover{
+	border-bottom: 2px solid #000;
+}
+
+
+.navlist a.active{
+	border-bottom: 2px solid #000;
+}
+
+.main-btnn a{
+	display: inline-block;
+	color: #000;
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 9px 25px;
+	line-height: 1.4;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all ease .50s;
+	cursor: pointer;
+}
+
+.main-btnn a:hover{
+	transform: scale(1.06);
+	color: #fff;
+	background: transparent;
+	border: 1px solid #e16748;
+}
+
+
+/* Adds css to section in the middle of the page....*/
+section{
+	padding: 90px 13% 80px;
+}
+
+.home{
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.form-label{
+	font-size: var(--h2-font);
+
+}
+
+.form-label h1{
+	font-size: 50px;
+	color: pink;
+}
+
+
+.input-group{
+	padding-block: 20px;
+}
+
+.form-control{
+	display: inline-block;
+	color: #000;
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 9px 25px;
+	line-height: 1.4;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all ease .50s;
+	cursor: text;
+	padding-right: 800px;
+}
+
+.link-download{
+	display: inline-block;
+	color: #fff;
+	background: #fff;
+	border: 1px solid #e16748;
+	padding: 9px 25px;
+	line-height: 1.4;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all ease .50s;
+	cursor: pointer;
+	background: transparent;
+	margin-left: 20px;
+}
+
+.link-download:hover{
+	color: #000;
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

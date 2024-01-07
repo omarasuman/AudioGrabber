@@ -1,0 +1,254 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Fredericka the Great', serif;
+}
+
+body{
+	color: #fef2e2;
+	background: #99392a;
+}
+
+/* Adds css to contents in the header....*/
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 13%;
+	background: transparent;
+	transition: all ease .50s;
+	z-index: 1000;
+}
+
+.logo{
+	font-size: 32px;
+	font-weight: 600;
+	color: #fef2e2;
+}
+
+.navlist{
+	display: flex;
+}
+
+.navlist a{
+	margin: 0 30px;
+	padding: 2px;
+	color: #fef2e2;
+	font-size: 15px;
+	font-weight: 500;
+	border-bottom: 2px solid transparent;
+	transition: all ease .50s;
+}
+
+.navlist a:hover{
+	border-bottom: 2px solid #87abb9;
+}
+
+
+.navlist a.active{
+	border-bottom: 2px solid #fef2e2;
+}
+
+.main-btnn a{
+	display: inline-block;
+	color: #000;
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 9px 25px;
+	line-height: 1.4;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all ease .50s;
+	cursor: pointer;
+}
+
+.main-btnn a:hover{
+	transform: scale(1.06);
+	color: #fff;
+	background: transparent;
+	border: 1px solid #e16748;
+}
+
+/* Adds css to section in the middle of the page....*/
+section{
+	padding: 0 13%;
+}
+
+/*.hero {
+    width: 50%;
+    height: 50vh;
+    position: relative;
+    background: url('/static/img/background.png');
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+*/
+.container{
+	padding-top: 250px;
+}
+
+.container h6{
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.container h1{
+	font-size: 100px;
+	margin: 0px 0px 30px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.container h3{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.container p{
+	width: 500px;
+	max-width: 100%;
+	line-height: 2;
+	font-size: 15px;
+	margin-bottom: 50px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container a{
+	display: inline-block;
+	color: #000;
+	background: #fff;
+	border: 1px solid #fff;
+	padding: 9px 25px;
+	line-height: 1.4;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all ease .50s;
+}
+
+
+.container a.cta{
+	border: 1px solid #e16748;
+	color: #fff;
+	background: transparent;
+	margin-left: 20px;
+	transition: all ease .50s;
+}
+
+.container a.cta:hover{
+	color: #000;
+	background: #87abb9;
+	border: 1px solid #fff;
+}
+
+.container a.cta i{
+	margin-right: 8px;
+}
+/* Adds css to contents in the social section....*/
+
+.sidebar{
+	position: absolute;
+	height: 340px;
+	width: 60px;
+	background-color: white;
+	border-radius: 10px;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+
+.box{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px auto;
+}
+
+.text{
+	background-color: #87abb9;
+	height: 100%;
+	min-height: 0px;
+	margin-right: 5px;
+	line-height: 0;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px 0 0 5px;
+	overflow: hidden;
+}
+
+
+.icon{
+	height: 100%;
+	min-width: 100%;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+
+.icon i{
+	color: #000;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.box:hover .icon{
+	background-color: #87abb9;
+}
+
+.box:hover .icon i{
+	color: white;
+}
+
+.box:hover .text{
+	min-width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

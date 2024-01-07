@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Favmusic</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	<!------------------------box icons links-------------------------->
+	<link rel="stylesheet"
+  	href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  	<!------------------------remix icons links------------------------->
+  	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+
+  	<!------------------------google font------------------------------>
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!------------header includes navlist and logo and btn for signup---------------->
+	<header>
+		<a href="#" class="logo">Favmusic!</a>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contact us</a></li>
+			
+		</ul>
+		<div class="main-btnn">
+				<a href="{{ url_for('login') }}">Login</a>
+		</div>
+	</header>
+	<!--This section introduces the website- and there is a login btn or signup depending on new users or old-->
+			
+	<section class="hero">
+
+		<div class="container">
+			<h6>No1 Hits!</h6>
+			<h3>Flow with the Sound</h3>
+			<h1>YouTube or SoundCloud!</h1>
+			<p> All Youtube and SoundCloud Videos, any day and every day. Free of Charge with no addictional cost.
+				Fully secured with no privacy concerns. Whatever video you adore will be stored for you and only you.
+				You can play, delete and control flow of the sound. To use our service, you need to create an account first. 
+				Just Sign Up and Login!</p>
+
+			<div class="main-btnn">
+				<a href="#" class="cta"><i class="ri-arrow-right-up-line"></i>Login</a>
+			</div>
+		</div>
+
+	</section>
+	<!------------------------------Adding socials----------------------------------->
+			
+	<section>
+	<div class="sidebar">
+				<div class="box">
+					<div class="text">
+						Facebook
+					</div>
+					<div class="icon">
+						<i class='bx bxl-facebook'></i>
+					</div>					
+				</div>
+				<div class="box">
+					<div class="text">
+						Twitter
+					</div>
+					<div class="icon">
+						<i class='bx bxl-twitter'></i>
+					</div>					
+				</div>
+				<div class="box">
+					<div class="text">
+						Instagram
+					</div>
+					<div class="icon">
+						<i class='bx bxl-instagram'></i>
+					</div>					
+				</div>
+				<div class="box">
+					<div class="text">
+						SoundCloud
+					</div>
+					<div class="icon">
+						<i class='bx bxl-soundcloud'></i>
+					</div>					
+				</div>
+				<div class="box">
+					<div class="text">
+						YouTube
+					</div>
+					<div class="icon">
+						<i class='bx bxl-youtube'></i>
+					</div>					
+				</div>
+		</div>
+		</section>
+	 <!------------------------Home section------------------------------>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
